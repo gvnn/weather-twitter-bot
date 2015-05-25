@@ -1,0 +1,35 @@
+{
+  "name": "weather-twitter-bot",
+  "version": "1.0.0",
+  "description": "Simple weather forecast Twitterbot",
+  "private": true,
+  "author": "Giovanni Ferron <gvnnrulez@gmail.com>",
+  "dependencies": {
+    "config": "^1.13.0",
+    "request": "^2.55.0",
+    "twit": "^1.1.20"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.2",
+    "mocha": "^2.2.5"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvnn/weather-twitter-bot.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gvnn/weather-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/gvnn/weather-twitter-bot",
+  "main": "index.js"
+}
