@@ -4,7 +4,7 @@ var should = require('should'),
 
 describe('Weather api test', function () {
 
-  before(function (done) {
+  beforeEach(function (done) {
     http_mock.init();
     done();
   });
@@ -30,6 +30,29 @@ describe('Weather api test', function () {
         });
     });
 
+    it('should return the weather for 2 days', function (done) {
+      weather.tomorrow(3068).then(
+        function (weather) {
+          weather.list.length.should.be.equal(2);
+          done();
+        });
+    });
+
+    it('should return the weather for 16 days', function (done) {
+      weather.days(3068, 100).then(
+        function (weather) {
+          should.exist(weather);
+          done();
+        });
+    });
+
+    it('should return the weather for 1 day', function (done) {
+      weather.days(3068, -100).then(
+        function (weather) {
+          should.exist(weather);
+          done();
+        });
+    });
 
   });
 
