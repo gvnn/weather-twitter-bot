@@ -6,6 +6,9 @@ module.exports = {
     access_token_secret: process.env.WTB_TWITTER_ACCESS_TOKEN_SECRET || ''
   },
   weather: {
-    base_url: 'http://api.openweathermap.org/data/2.5'
+    domain: 'http://api.openweathermap.org',
+    base_path: 'data/2.5',
+    country: 'au',
+    units: 'metric'
   }
 };

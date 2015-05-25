@@ -5,6 +5,8 @@
   "private": true,
   "author": "Giovanni Ferron <gvnnrulez@gmail.com>",
   "dependencies": {
+    "URIjs": "^1.15.1",
+    "bluebird": "^2.9.25",
     "config": "^1.13.0",
     "request": "^2.55.0",
     "twit": "^1.1.20"
